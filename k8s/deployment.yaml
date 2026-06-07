@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cv-site
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cv-site
+  template:
+    metadata:
+      labels:
+        app: cv-site
+    spec:
+      containers:
+        - name: cv-site
+          image: docker.io/library/cv-site:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 80

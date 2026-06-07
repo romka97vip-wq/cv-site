@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Engineer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Courier New', monospace;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            padding: 40px;
+        }
+        .prompt {
+            color: #58a6ff;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        h1 {
+            font-size: 48px;
+            color: #f0f6fc;
+            margin-bottom: 10px;
+        }
+        .title {
+            color: #3fb950;
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+        .section {
+            margin-bottom: 35px;
+        }
+        .section-title {
+            color: #58a6ff;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #21262d;
+            padding-bottom: 8px;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .tag {
+            background: #161b22;
+            border: 1px solid #30363d;
+            color: #c9d1d9;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+        .tag:hover {
+            border-color: #58a6ff;
+            color: #58a6ff;
+            cursor: default;
+        }
+        .status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #3fb950;
+            font-size: 14px;
+        }
+        .dot {
+            width: 8px;
+            height: 8px;
+            background: #3fb950;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
+        .footer {
+            margin-top: 50px;
+            color: #484f58;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="prompt">~/devops $</div>
+        <h1>DevOps Engineer</h1>
+        <div class="title">Infrastructure · Security · Automation</div>
+
+        <div class="section">
+            <div class="section-title">// Stack</div>
+            <div class="tags">
+                <span class="tag">Linux</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Kubernetes</span>
+                <span class="tag">Nginx</span>
+                <span class="tag">WireGuard</span>
+                <span class="tag">Prometheus</span>
+                <span class="tag">Grafana</span>
+                <span class="tag">CI/CD</span>
+                <span class="tag">Terraform</span>
+                <span class="tag">Vault</span>
+                <span class="tag">ELK Stack</span>
+                <span class="tag">Bash</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">// Focus</div>
+            <div class="tags">
+                <span class="tag">DevSecOps</span>
+                <span class="tag">Infrastructure as Code</span>
+                <span class="tag">Container Security</span>
+                <span class="tag">Monitoring</span>
+                <span class="tag">VPN & Networking</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">// Status</div>
+            <div class="status">
+                <div class="dot"></div>
+                Learning DevOps
+            </div>
+        </div>
+
+        <div class="footer">
+            <!-- feel free to reach out -->
+        </div>
+    </div>
+</body>
+</html>
