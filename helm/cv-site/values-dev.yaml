@@ -1,0 +1,2 @@
+# Dev environment - 1 реплика, меньше ресурсов
+replicaCount: 1
