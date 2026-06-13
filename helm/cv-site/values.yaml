@@ -7,9 +7,9 @@ replicaCount: 2
 
 # This sets the container image more information can be found here: https://kubernetes.io/docs/concepts/containers/images/
 image:
-  repository: cv-site
+  repository: ghcr.io/romka97vip-wq/cv-site
   # This sets the pull policy for images.
-  pullPolicy: Never
+  pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
 
