@@ -5,7 +5,7 @@ ingress:
   className: traefik
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-prod
-    traefic.ingress.kubernetes.io/router.middlewares: cv-site-redirect-to-https@kubernetescrd
+    traefik.ingress.kubernetes.io/router.middlewares: cv-site-redirect-to-https@kubernetescrd
   hosts:
     - host: devopsrk.duckdns.org
       paths:
