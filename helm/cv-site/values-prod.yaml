@@ -1,2 +1,16 @@
 # Production - 5 реплик
 replicaCount: 5
+ingress:
+  enabled: true
+  className: traefik
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-staging
+  hosts:
+    - host: devopsrk.duckdns.org
+      paths:
+        - path: /
+          pathType: Prefix
+  tls:
+    - secretName: cv-site-tls
+      hosts:
+        - devopsrk.duckdns.org
